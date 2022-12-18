@@ -1,6 +1,6 @@
 $(function() {
     $(".carousel").carousel( { interval: 2000 } );
-    $("#carouselButton").click(function(){
+    $("#carouselButton").onclick(function(){
         if ($("#carouselButton").children("i").hasClass("fa-pause")) {
             $(".carousel").carousel("pause");
             $("#carouselButton").children("i").removeClass("fa-pause");
@@ -12,3 +12,16 @@ $(function() {
         }
     });
 });
+
+$(function() {
+    $("#loginButton").onclick(function(){
+        $("#loginModal").modal("show");
+    }   
+});
+
+$(function() {
+    $("#reserveButton").onclick(function(){
+        $("#reserveModal").modal("show");
+    }
+});
+
